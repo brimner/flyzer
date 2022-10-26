@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let disc of discs" >
+    <a (click)="onSelect(disc)" href="#">{{disc.discName}}</a>
+  </li>
+</ul>
+<div *ngIf="selectedDisc">
+  <app-disc-info [disc]="selectedDisc"></app-disc-info>
+</div>
+<div *ngIf="!selectedDisc">
+
+</div>
