@@ -1,12 +1,36 @@
-<strong>NAME:</strong><br>
-{{disc.discName}}<br>
-<strong>MANUFACTURER:</strong><br>
-{{disc.manufacturer}}<br>
-<strong>SPEED:</strong><br>
-{{disc.speed}}<br>
-<strong>GLIDE:</strong><br>
-{{disc.glide}}<br>
-<strong>TURN:</strong><br>
-{{disc.turn}}<br>
-<strong>FADE:</strong><br>
-{{disc.fade}}<br>
+
+<h2>{{disc.manufacturer +" "+ disc.discName}}</h2>
+    <table class="table table-bordered table-dark table-hover">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">
+          <button type="button" class="btn btn-dark btn-sm" (click)="sub_speed()">-</button>
+            SPEED
+          <button type="button" class="btn btn-dark btn-sm" (click)="add_speed()">+</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-dark btn-sm" (click)="sub_glide()">-</button>
+            GLIDE
+          <button type="button" class="btn btn-dark btn-sm" (click)="add_glide()">+</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-dark btn-sm" (click)="sub_turn()">-</button>
+            TURN
+          <button type="button" class="btn btn-dark btn-sm" (click)="add_turn()">+</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-dark btn-sm" (click)="sub_fade()">-</button>
+            FADE
+          <button type="button" class="btn btn-dark btn-sm" (click)="add_fade()">+</button>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>{{disc.speed}}</td>
+        <td>{{disc.glide}}</td>
+        <td>{{disc.turn}}</td>
+        <td>{{disc.fade}}</td>
+      </tr>
+      </tbody>
+    </table>
