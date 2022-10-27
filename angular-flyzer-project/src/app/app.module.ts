@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DiscDisplayComponent } from './disc-display/disc-display.component';
 import { DiscInfoComponent } from './disc-info/disc-info.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { DashboardViewComponent } from './dashboard-view/dashboard-view.component';
+import { MyBagComponent } from './my-bag/my-bag.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DiscDisplayComponent,
-    DiscInfoComponent
+    DiscInfoComponent,
+    SideBarComponent,
+    DashboardViewComponent,
+    MyBagComponent
   ],
   imports: [
     BrowserModule,
